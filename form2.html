@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>お問い合わせ</title>
+  <link rel="icon" href="favicon.ico">
+  <meta name="descripiton" content="お問い合わせ">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+  <body>
+      <header>
+          <nav>
+              <ul>
+                <li>
+                  <a href="index.html">
+                  HOME
+                  </a>
+                </li>
+                <li>
+                  <a href="about.html">
+                    ABOUT
+                  </a>
+                </li>  
+                <li class="current">  
+                  <a href="form2.html">
+                    お問い合わせ
+                  </a>
+                </li> 
+              </ul>
+              </nav>
+              <h1>~Umizaru Blog~</h1>     
+      </header>
+      <div class="inform">
+        <h1>入力フォーム</h1><br>
+          <form method="post" action="php/toiawase.php">
+          お名前:<input type="text" name="onamae" required><br>
+          カテゴリ:
+        <select name="category">
+            <option value="">選択してください</option>
+            <option value="1">男性</option>
+            <option value="2">女性</option>
+        </select>
+        <br>
+          メールアドレス:<input type="text" name="mail_address" required><br>
+          メッセージ本文:
+          <textarea name="howto" cols="40" rows="4" maxlength="150"></textarea>
+        <br>
+          <input type="submit" value="送信">
+    </form>
+    </div>  
+  </body>  
+</html>
